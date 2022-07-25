@@ -9,17 +9,54 @@
 </head>
 
 <body>
-    
-                </form>
-            </div>
-        </div>
+  <div class="_hidden">
+  <div class="popup popup_active">
+    <div class="popup_container">
+      <button class="popup_close_button">
+        <span class="visually-hidden">Кнопка закрытия всплывающего окна</span>
+      </button>
+      <div class="popup_feedback">
+        <h2 class="popup_title">Ваш фидбек</h2>
+        <form class="popup_form">
+          <div class="popup_form_row">
+            <label class="popup_form_group">
+              <span class="popup_form_hint">Как часто вы заходите на сайт?</span>
+              <select class="select">
+                <option>Почти каждый день</option>
+                <option>Раз в несколько дней</option>
+                <option>Раз в несколько недель</option>
+                <option>Несколько раз в год</option>
+              </select>
+            </label>
+          </div>
+          <div class="popup_form_row">
+            <span class="visually-hidden">Вы подписаны на e-mail рассылку?</span>
+            <label class="popup_radio_group">
+              <input type="radio" class="radio" name="popup_radio_group" required>
+              <span class="popup_radio_group_text">Да</span>
+            </label>
+            <label class="popup_radio_group">
+              <input type="radio" class="radio" name="popup-radio-group" required>
+              <span class="popup_radio_group_text">Нет</span>
+            </label>
+          </div>
+          <div class="popup_form_row">
+            <span class="visually-hidden">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+            <textarea class="popup_text_field" placeholder="Может, больше рецептов?" required></textarea>
+          </div>
+          <div class="popup_form_ row">
+            <button class="button">Отправить</button>
+          </div>
+        </form>
+      </div>
     </div>
-
+  </div>
+  </div>
   <header class="header">
     <div class="header_wrapper">
       <div class="menu">
         <a class="logo_link" href="#">
-          <img src="svg/noemi-logo.svg" class="header_logo" alt="логотип ноэми" width="170"> </a>
+          <img src="svg/noemi-logo.svg" alt="логотип ноэми" class="header_logo"> </a>
         <nav class="menu_nav">
           <ul class="menu_nav_list">
             <li class="menu_nav_item">
@@ -42,9 +79,13 @@
             </li>
           </ul>
         </nav>
-
+        <button class="menu_burger">
+          <span class="visually-hidden">Кнопка меню</span>
+        </button>
       </div>
-
+      <a href="#0" class="logo_image_mobile">
+        <img src="svg/noemi-logo.svg" alt="Логотип Noemi" class="logo_mobile">
+      </a>
       <h1 class="header_title">Блог о творчестве, спорте, и образе жизни</h1>
   </header>
   </div>
